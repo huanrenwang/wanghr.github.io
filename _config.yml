@@ -87,19 +87,19 @@ repository: paul-wanghr/paul-wanghr.github.io
 #      Comments    #
 # ---------------- #
 # support provider: disqus, gitment, gitalk
-comments_provider: gitalk
+comments_provider: gitment
 # !!!重要!!! 请修改下面这些信息为你自己申请的
 # !!!Important!!! Please modify infos below to yours
 # https://disqus.com
 disqus:
     username: 
 # https://imsun.net/posts/gitment-introduction/
-#gitment:
-#    owner: paul-wanghr
-#    repo: paul-wanghr/paul-wanghr.github.io
-#    oauth:
- #       client_id: 9d3aea1fe61f037d06a6
- #       client_secret: a55022988b1240cf2092faa4f9358bf548ec087f
+gitment:
+    owner: paul-wanghr
+    repo: paul-wanghr/paul-wanghr.github.io
+    oauth:
+        client_id: 9d3aea1fe61f037d06a6
+        client_secret: a55022988b1240cf2092faa4f9358bf548ec087f
     #    https://github.com/gitalk/gitalk#install
 gitalk:
     owner: paul-wanghr
