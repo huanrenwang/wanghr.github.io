@@ -104,7 +104,7 @@ gitment:
 gitalk:
     enable: true
     owner: paul-wanghr
-    repo:  paul-wanghr/paul-wanghr.github.io
+    repo:  blog
     clientID: 7732f1086fa71655fd7c
     clientSecret: c4f195b5a2a1fe3f411982e3f7dee5d40b2ab305
     admin: paul-wanghr
