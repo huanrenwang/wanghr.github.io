@@ -81,7 +81,7 @@ collections:
         output: true
         permalink: /wiki/:path/
 
-repository: mzlogin/mzlogin.github.io
+repository: paul-wanghr/paul-wanghr.github.io
 
 # ---------------- #
 #      Comments    #
