@@ -96,14 +96,14 @@ disqus:
 # https://imsun.net/posts/gitment-introduction/
 gitment:
     owner: paul-wanghr
-    repo: blog-comments
+    repo: paul-wanghr.github.io
     oauth:
         client_id: 9d3aea1fe61f037d06a6
         client_secret: a55022988b1240cf2092faa4f9358bf548ec087f
     #    https://github.com/gitalk/gitalk#install
 gitalk:
     owner: paul-wanghr
-    repo: blog-comments
+    repo: paul-wanghr.github.io
     clientID: 137e4af4f1af9a29d755
     clientSecret: e7641de629a9cf0007bd7e0a772adee2afbc2205
 # 在使用其它评论组件时可点击显示 Disqus
