@@ -10,7 +10,7 @@ description: "paul大叔的个人博客"
 keywords: IT老兵, Huanren Wang, paul
 timezone: Asia/Shanghai
 encoding: "utf-8"
-side_bar_repo_limit: 1
+#side_bar_repo_limit: 0
 
 # ---------------- #
 #      Author      #
