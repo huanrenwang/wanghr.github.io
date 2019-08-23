@@ -1,18 +1,18 @@
 ---
 layout: page
 title: About
-description: 打码改变世界
-keywords: Zhuang Ma, 马壮
+description: 技术改变人生
+keywords: Huanren Wang, paul
 comments: true
 menu: 关于
 permalink: /about/
 ---
 
-我是马壮，码而生，码而立。
+我是paul，因技术成就，因技术立足。
 
 仰慕「优雅编码的艺术」。
 
-坚信熟能生巧，努力改变人生。
+努力改变人生。
 
 ## 联系
 
