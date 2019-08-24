@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: 关于个人
 description: 技术改变人生
 keywords: Huanren Wang, paul
 comments: true
@@ -8,9 +8,8 @@ menu: 关于
 permalink: /about/
 ---
 
-我是paul，因技术成就，因技术立足。
+我是 *paul*，因技术成就，因技术立足。
 
-努力改变人生。
 
 ## 联系
 
