@@ -229,6 +229,7 @@ e 文件名	如果文件存在则为真
 ## shell 流程控制
 
 * if else
+
 ```
 if condition
 then
@@ -250,6 +251,7 @@ fi
 ```
 
 * for 
+
 ```
 for var in item1 item3....
 do
@@ -265,7 +267,6 @@ done
 ```
 
 * while
-
 ```
 while condition
 do
@@ -285,7 +286,6 @@ done
 
 
 * until 循环 ---直到条件为true时停止
-
 ```
 until condition
 do
@@ -304,7 +304,6 @@ done
 ```
 
 * case
-
 ```
 case 值 in
 模式1)
