@@ -113,10 +113,10 @@ echo $val
 
 -eq	检测两个数是否相等，相等返回 true。	[ $a -eq $b ] 返回 false。
 -ne	检测两个数是否不相等，不相等返回 true。	[ $a -ne $b ] 返回 true。
--gt	检测左边的数是否大于右边的，如果是，则返回 true。	[ $a -gt $b ] 返回 false。
--lt	检测左边的数是否小于右边的，如果是，则返回 true。	[ $a -lt $b ] 返回 true。
--ge	检测左边的数是否大于等于右边的，如果是，则返回 true。	[ $a -ge $b ] 返回 false。
--le	检测左边的数是否小于等于右边的，如果是，则返回 true。	[ $a -le $b ] 返回 true。
+-gt	检测左边的数是否大于右边的，如果是，则返回 true。[ $a -gt $b ] 返回 false。
+-lt	检测左边的数是否小于右边的，如果是，则返回 true。[ $a -lt $b ] 返回 true。
+-ge	检测左边的数是否大于等于右边的，如果是，则返回 true。[ $a -ge $b ] 返回 false。
+-le	检测左边的数是否小于等于右边的，如果是，则返回 true。[ $a -le $b ] 返回 true。
 
 #!/bin/bash
 
@@ -162,7 +162,7 @@ fi
 
 
 3.布尔运算符
-!	非运算，表达式为 true 则返回 false，否则返回 true。	[ ! false ] 返回 true。
+!	非运算，表达式为 true 则返回 false，否则返回 true。[ ! false ] 返回 true。
 -o	或运算，有一个表达式为 true 则返回 true。[ $a -lt 20 -o $b -gt 100 ] 返回 true。
 -a	与运算，两个表达式都为 true 才返回 true。[ $a -lt 20 -a $b -gt 100 ] 返回 false
 
@@ -192,6 +192,7 @@ printf  format-string  [arguments...]
 %-4.2f 指格式化为小数，其中.2指保留2位小数
 
 ## Shell test 命令 
+
 * 检查条件是否成立，可以进行数值，字符和文件三个方面进行测试
 
   -eq	等于则为真
@@ -226,6 +227,7 @@ e 文件名	如果文件存在则为真
 ```
 
 ## shell 流程控制
+
 * if else
 ```
 if condition
@@ -263,6 +265,7 @@ done
 ```
 
 * while
+
 ```
 while condition
 do
@@ -278,8 +281,8 @@ do
     let "int++"
 
 done
-
 ```
+
 
 * until 循环 ---直到条件为true时停止
 
@@ -317,6 +320,6 @@ case 值 in
     commandN
     ;;
 esac
-
 ```
+
 * break ,continue 参考之前的编程语言就ok
