@@ -113,10 +113,10 @@ echo $val
 
 -eq	检测两个数是否相等，相等返回 true。	[ $a -eq $b ] 返回 false。
 -ne	检测两个数是否不相等，不相等返回 true。	[ $a -ne $b ] 返回 true。
--gt	检测左边的数是否大于右边的，如果是，则返回 true。	[ $a -gt $b ] 返回 false。
--lt	检测左边的数是否小于右边的，如果是，则返回 true。	[ $a -lt $b ] 返回 true。
--ge	检测左边的数是否大于等于右边的，如果是，则返回 true。	[ $a -ge $b ] 返回 false。
--le	检测左边的数是否小于等于右边的，如果是，则返回 true。	[ $a -le $b ] 返回 true。
+-gt	检测左边的数是否大于右边的，如果是，则返回 true。[ $a -gt $b ] 返回 false。
+-lt	检测左边的数是否小于右边的，如果是，则返回 true。[ $a -lt $b ] 返回 true。
+-ge	检测左边的数是否大于等于右边的，如果是，则返回 true。[ $a -ge $b ] 返回 false。
+-le	检测左边的数是否小于等于右边的，如果是，则返回 true。[ $a -le $b ] 返回 true。
 
 #!/bin/bash
 
@@ -162,7 +162,7 @@ fi
 
 
 3.布尔运算符
-!	非运算，表达式为 true 则返回 false，否则返回 true。	[ ! false ] 返回 true。
+!	非运算，表达式为 true 则返回 false，否则返回 true。[ ! false ] 返回 true。
 -o	或运算，有一个表达式为 true 则返回 true。[ $a -lt 20 -o $b -gt 100 ] 返回 true。
 -a	与运算，两个表达式都为 true 才返回 true。[ $a -lt 20 -a $b -gt 100 ] 返回 false
 
@@ -190,3 +190,135 @@ printf  format-string  [arguments...]
 %-10s 指一个宽度为10个字符（-表示左对齐，没有则表示右对齐），任何字符都会被显示在10个字符宽的字符内，如果不足则自动以空格填充，超过也会将内容全部显示出来。
 
 %-4.2f 指格式化为小数，其中.2指保留2位小数
+
+## Shell test 命令 
+
+* 检查条件是否成立，可以进行数值，字符和文件三个方面进行测试
+
+  -eq	等于则为真
+  -ne	不等于则为真
+  -gt	大于则为真
+  -ge	大于等于则为真
+  -lt	小于则为真
+  -le	小于等于则为真
+
+```
+num1=100
+num2=100
+if test $[num1] -eq $[num2]
+then
+    echo '两个数相等！'
+else
+    echo '两个数不相等！'
+fi
+
+文件测试
+
+e 文件名	如果文件存在则为真
+-r 文件名	如果文件存在且可读则为真
+-w 文件名	如果文件存在且可写则为真
+-x 文件名	如果文件存在且可执行则为真
+-s 文件名	如果文件存在且至少有一个字符则为真
+-d 文件名	如果文件存在且为目录则为真
+-f 文件名	如果文件存在且为普通文件则为真
+-c 文件名	如果文件存在且为字符型特殊文件则为真
+-b 文件名	如果文件存在且为块特殊文件则为真
+
+```
+
+## shell 流程控制
+
+* if else
+
+```
+if condition
+then
+    command1
+    command2
+fi
+
+if else-if else
+
+if condition1
+then
+    commcand1
+elif condition2
+then
+    command2
+else
+    command3
+fi
+```
+
+* for 
+
+```
+for var in item1 item3....
+do
+    command1;command2....
+done
+
+例如:
+
+for loop in 1 2 3 4 5
+do
+    ehco "The value is: $loop"
+done
+```
+
+* while
+```
+while condition
+do
+   command
+done
+
+例如:
+#!/bin/bash
+int=1
+while(($int<=5>))
+do
+    echo $int
+    let "int++"
+
+done
+```
+
+
+* until 循环 ---直到条件为true时停止
+```
+until condition
+do
+    command
+done
+
+例如:
+
+#!/bin/bash
+a=0
+until [ ! $a -lt 10 ]
+do
+   echo $a
+   a=`expr $a + 1`
+done
+```
+
+* case
+```
+case 值 in
+模式1)
+    command1
+    command2
+    ...
+    commandN
+    ;;
+模式2）
+    command1
+    command2
+    ...
+    commandN
+    ;;
+esac
+```
+
+* break ,continue 参考之前的编程语言就ok
