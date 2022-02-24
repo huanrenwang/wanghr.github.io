@@ -18,7 +18,7 @@ side_bar_repo_limit: 5
 author: Huanren Wang
 organization: 
 organization_url: 
-github_username: paul-wanghr
+github_username: huanrenwang
 location: Nanjing, China
 email: whrgxl8687@126.com
 
@@ -81,7 +81,8 @@ collections:
         output: true
         permalink: /wiki/:path/
 
-repository: paul-wanghr/paul-wanghr.github.io
+repository: huanrenwang/wanghr.github.io
+
 
 # ---------------- #
 #      Comments    #
@@ -95,16 +96,16 @@ disqus:
     username: 
 # https://imsun.net/posts/gitment-introduction/
 gitment:
-    owner: paul-wanghr
-    repo: paul-wanghr/paul-wanghr.github.io
+    owner: huanrenwang
+    repo: huanrenwang/wanghr.github.io
     oauth:
         client_id: 9d3aea1fe61f037d06a6
         client_secret: a55022988b1240cf2092faa4f9358bf548ec087f
     #    https://github.com/gitalk/gitalk#install
 gitalk:
     enable: true
-    owner: paul-wanghr
-    repo:  paul-wanghr.github.io
+    owner: huanrenwang
+    repo:  huanrenwang/wanghr.github.io
     clientID: 7732f1086fa71655fd7c
     clientSecret: c4f195b5a2a1fe3f411982e3f7dee5d40b2ab305
     admin: paul-wanghr
